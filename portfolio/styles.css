@@ -1,0 +1,254 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f3f4f6;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #7879af;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #3498db;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/hero-background.jpg') no-repeat center center/cover;
+    color: #3e2f2f;
+    padding: 100px 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background: #3498db;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background: #6a11cb;
+    transform: translateY(-3px);
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background: url('images/about-background.jpg') no-repeat center center/cover;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.about .profile-image {
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about p {
+    margin: 20px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+.skills {
+    margin-top: 20px;
+}
+
+.skill {
+    display: inline-block;
+    background: #6a11cb;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.skill:hover {
+    background: #3498db;
+}
+
+/* Past Experiences Section */
+.experiences {
+    padding: 60px 20px;
+    background: url('images/experience-background.jpg') no-repeat center center/cover;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.experience {
+    background: rgba(44, 62, 80, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.experience:hover {
+    transform: translateY(-5px);
+}
+
+.experience-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* My Achievements Section */
+.achievements {
+    padding: 60px 20px;
+    background: url('images/achievements-background.jpg') no-repeat center center/cover;
+    background-size: cover;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.achievement-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.achievement-list li {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.achievement-list h3 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background: #9e1993;
+}
+.contact-background {
+    background-image: url('images/contact-background.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+    color: #222221; /* Adjust text color for contrast */
+}
+
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social-links a {
+    color: #ecf0f1;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #3498db;
+}
